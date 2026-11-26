@@ -1,64 +1,95 @@
 <h1 align="center">Hi, I'm Anand 👋</h1>
 
 <p align="center">
-  Data Science & Artificial Intelligence undergraduate at IIT Guwahati<br>
-  I build things that turn messy real-world data into decisions people can act on.
+  Data Science & Artificial Intelligence undergraduate at <b>IIT Guwahati</b> · 3rd year<br>
+  I work on models that stay interpretable — and that get checked against reality, not against themselves.
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/anandk0040"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:aanandkumarjaat@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
 ---
 
-### About me
+### Research interests
 
-- 🛰️ Working on **UHI-India** — measuring and simulating urban heat islands across 47 Indian cities from satellite data
-- 🧪 Interested in the place where **physics and machine learning meet**: models that respect what we already know rather than ignoring it
-- 🔍 I care about work being *checkable*. Models get validated against independent data, and outputs say what they can't tell you
-- 🏛️ Previously interned at the **Indian Cyber Crime Coordination Centre (I4C)**, Ministry of Home Affairs
+Interpretable machine learning · physics-informed and hybrid models · evaluation and reliability of AI and LLM systems · data-driven modelling of real-world climate and social systems.
 
 ---
 
-### Tech stack
+### Experience
 
-**Machine learning & data**
+**AI Intern — Indian Cyber Crime Coordination Centre (I4C)**
+*Ministry of Home Affairs, Government of India · Nov 2025 – Jan 2026*
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![SHAP](https://img.shields.io/badge/SHAP-6E40C9?style=for-the-badge&logo=python&logoColor=white)
-
-**Geospatial**
-
-![Google Earth Engine](https://img.shields.io/badge/Earth%20Engine-4285F4?style=for-the-badge&logo=googleearth&logoColor=white)
-![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white)
-![geemap](https://img.shields.io/badge/geemap-2E8B57?style=for-the-badge&logo=python&logoColor=white)
-
-**Building & shipping**
-
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+- Evaluated an internal **RAG system**: designed test queries across difficulty levels and measured response accuracy, relevance and hallucination rate
+- Cleaned and structured large, unstructured crime datasets in Python and pandas for downstream analysis
+- Built an automation tool that checks a list of phone numbers for registration across major social platforms and produces an Excel report for investigators
+- Translated 350+ Chinese-language case files into English to support ongoing investigations
 
 ---
 
 ### Projects
 
-**[UHI-India](https://github.com/anand-kumar011/uhi-india)** — urban heat intelligence for Indian cities
+**[UHI-India](https://github.com/anand-kumar011/uhi-india)** — urban heat island prediction platform
+*Built for an ISRO hackathon*
 
-Measures, explains and simulates urban heat islands across 47 cities using Landsat 8, ECOSTRESS and ERA5 data. A physics-informed Random Forest takes a surface-energy-balance estimate as an input feature, so the model learns corrections to the physics instead of replacing it. SHAP explains why each city is hot; a genetic-algorithm optimizer plans cooling interventions within a given budget.
+Combines a machine learning model with physics-based equations to predict urban heat island intensity across Indian cities. SHAP interprets which factors — vegetation cover, building density, surface reflectivity — drive heat in each city, and how their weight shifts from one city to another. On top of that: heat-hotspot detection, city-type classification, and a simulator for testing cooling strategies such as added vegetation or reflective roofs, all through an interactive Flask + JavaScript dashboard.
 
-The part I'd point at: validation runs against ECOSTRESS, an independent NASA satellite, rather than the training data — so the error numbers mean something. And the optimizer reports quantities, not land parcels, because the data can't support that precision.
+The part I'd point at: the physics estimate goes into the model as a feature, so the ML learns corrections to the physics rather than ignoring it — and validation runs against ECOSTRESS, an independent satellite, instead of the training data.
 
-`Python` · `Flask` · `Earth Engine` · `scikit-learn` · `SHAP` · `pymoo` · `Leaflet`
+`Python` · `scikit-learn` · `SHAP` · `Earth Engine` · `Flask` · `JavaScript`
 
-**[Digital Footprint Checker](https://github.com/anand-kumar011/digital-footprint-checker)** — bulk investigation tooling
+**[Cross-Platform Number Checker](https://github.com/anand-kumar011/digital-footprint-checker)** — portfolio version
 
-Built during my I4C internship to replace a manual, one-number-at-a-time process: an Excel list of mobile numbers goes in, a formatted per-platform presence report comes out. The public version is a safe re-implementation — the platform checkers are stubs returning simulated results, and the sample data is fictional. Everything around them is the real pipeline.
+A safe, non-sensitive re-implementation of the I4C investigation tool: reads phone numbers from Excel and reports platform-registration status. The platform checkers are stubs returning simulated results and the sample data is fictional — everything around them is the real pipeline.
 
 `Python` · `Flask` · `pandas` · `openpyxl`
+
+---
+
+### Tech stack
+
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Machine learning & AI**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-6E40C9?style=for-the-badge&logo=python&logoColor=white)
+![NLP](https://img.shields.io/badge/NLP-4B8BBE?style=for-the-badge&logo=spacy&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG%20pipelines-1A7F64?style=for-the-badge&logo=databricks&logoColor=white)
+![LLM evaluation](https://img.shields.io/badge/LLM%20evaluation-8A3FFC?style=for-the-badge&logo=openai&logoColor=white)
+
+**Data & visualisation**
+
+![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
+
+**Tools**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+---
+
+### Coursework
+
+Machine Learning Fundamentals · Statistics & Statistical Inference · Linear Algebra · Optimization · Time Series Analysis · Data Structures · Algorithm Design & Analysis · Data Mining & Warehousing · Data Modeling & Visualization · Database Management Systems · Prompt Engineering
 
 ---
 
@@ -72,5 +103,5 @@ Built during my I4C internship to replace a manual, one-number-at-a-time process
 ---
 
 <p align="center">
-  Open to internships and research collaborations in ML, remote sensing and climate tooling.
+  Open to internships and research collaborations in interpretable ML, LLM evaluation and climate modelling.
 </p>
